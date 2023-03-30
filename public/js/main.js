@@ -40,7 +40,7 @@ searchForm.addEventListener('submit', event => {
 
       // Display the list in the results div
       resultsDiv.innerHTML = '';
-      resultsDiv.appendChild(flightList);
+      resultsDiv.appendChild(flightList); 
     })
     .catch(error => {
       console.error(error);
