@@ -8,8 +8,7 @@ searchForm.addEventListener('submit', event => {
   const arrIata = searchForm.elements.arr_iata_code.value;
   const flightDate = searchForm.elements.flight_date.value;
   const searchQuery = searchForm.elements.search.value; // added search term
-  console.log(depIata)
-  console.log(arrIata)
+
   // Create the API request URL with search parameter
   let url = `/search?dep_iata=${depIata}&arr_iata=${arrIata}&flight_date=${flightDate}`;
   if (searchQuery) {
@@ -34,12 +33,12 @@ searchForm.addEventListener('submit', event => {
         flightDiv.appendChild(flightHeader);
         flightDiv.appendChild(departureP);
         flightDiv.appendChild(arrivalP);
-        resultsDiv.appendChild(flightDiv);
+        flightList.appendChild(flightDiv);
       });
 
       // Display the list in the results div
       resultsDiv.innerHTML = '';
-      resultsDiv.appendChild(flightDiv);
+      resultsDiv.appendChild(flightList);
     })
     .catch(error => {
       console.error(error);
