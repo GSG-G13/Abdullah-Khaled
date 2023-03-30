@@ -34,12 +34,13 @@ searchForm.addEventListener('submit', event => {
         flightDiv.appendChild(flightHeader);
         flightDiv.appendChild(departureP);
         flightDiv.appendChild(arrivalP);
-        resultsDiv.appendChild(flightDiv);
+        flightDiv.classList.add("flight-div")
+        flightList.appendChild(flightDiv);
       });
 
       // Display the list in the results div
       resultsDiv.innerHTML = '';
-      resultsDiv.appendChild(flightDiv);
+      resultsDiv.appendChild(flightList);
     })
     .catch(error => {
       console.error(error);
