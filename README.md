@@ -1,4 +1,5 @@
-#Flight Times Search
+#Flight 
+Times Search
 This is a simple web application that allows users to search for flight times between two airports on a specific date.
 
 #Getting Started
