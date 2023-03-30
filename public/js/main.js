@@ -7,7 +7,7 @@ searchForm.addEventListener('submit', event => {
   const depIata = searchForm.elements.dep_iata_code.value;
   const arrIata = searchForm.elements.arr_iata_code.value;
   const flightDate = searchForm.elements.flight_date.value;
-  const searchQuery = searchForm.elements.search.value; // added search term
+  const searchQuery = searchForm.elements.search.value;
   console.log(depIata)
   console.log(arrIata)
   // Create the API request URL with search parameter
