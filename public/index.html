@@ -9,19 +9,19 @@
     <form id="search-form">
   <div>
     <label for="dep-iata">Departure Airport (IATA code):</label>
-    <input type="text" id="dep-iata" name="dep_iata" required />
+    <input type="text" id="dep-iata" name="dep_iata" required pattern="[A-Z]{3}" />
     <input type="hidden" id="dep_iata_code" name="dep_iata_code" />
   </div>
   <div>
     <label for="arr-iata">Arrival Airport (IATA code):</label>
-    <input type="text" id="arr-iata" name="arr_iata" required />
+    <input type="text" id="arr-iata" name="arr_iata" required pattern="[A-Z]{3}" />
     <input type="hidden" id="arr_iata_code" name="arr_iata_code" />
   </div>
   <div>
     <label for="flight-date">Flight Date:</label>
     <input type="date" id="flight-date" name="flight_date" required />
   </div>
-  <button type="submit" name="search">Search</button>
+  <button type="submit">Search</button>
 </form>
     <div id="results"></div>
     <script src="js/main.js"></script>
