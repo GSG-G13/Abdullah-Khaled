@@ -1,8 +1,13 @@
 {
+  "type": "module",
   "name": "abdullah-khaled",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,14 +20,5 @@
   "bugs": {
     "url": "https://github.com/GSG-G13/Abdullah-Khaled/issues"
   },
-  "homepage": "https://github.com/GSG-G13/Abdullah-Khaled#readme",
-  "devDependencies": {
-    "eslint": "^8.37.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "nodemon": "^2.0.22"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+  "homepage": "https://github.com/GSG-G13/Abdullah-Khaled#readme"
 }
